@@ -30,7 +30,7 @@ p {
   padding-left: 0;
 }
 body {
-  margin:0;
+  margin: 0;
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
 }
@@ -81,7 +81,7 @@ img {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
-  letter-spacing: 0.03em;;
+  letter-spacing: 0.03em;
 }
 .blue {
   color: var(--accent-color);
@@ -97,9 +97,6 @@ a:focus {
   text-decoration: none;
   color: var(--accent-color);
 }
-ul {
-  list-style: none;
-}
 .current-page {
   color: var(--accent-color);
 }
@@ -107,11 +104,11 @@ ul {
   padding-left: 93px;
   padding-right: 0;
 }
-.site-nav li,
-.contacts li {
+.site-nav-items,
+.contacts-items {
   /* margin: 8px 25px 0px 25px; */
   margin-left: 25px;
-  margin-right: 25px;;
+  margin-right: 25px;
 }
 .contacts {
   color: var(--secondary-text-color);
@@ -128,17 +125,17 @@ ul {
   flex-direction: column;
   color: var(--white-color);
 }
-.hero h1 {
+.hero-title {
   text-align: center;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
 }
-.hero button {
+.hero-button {
   width: 200px;
   height: 50px;
-  margin-top:30px;
+  margin-top: 30px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -152,15 +149,25 @@ ul {
   border: none;
   cursor: pointer;
 }
-.hero button:hover,
-.hero button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background: var(--hover-button-color);
 }
 /* секция список характеристик */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .list-of-features {
   padding-bottom: 0;
 }
-.list-of-features ul {
+.features {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,19 +176,18 @@ ul {
   margin: auto;
   width: 270px;
 }
-.feature h3 {
+.feature-title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-.feature p {
+.feature-description {
   font-size: 14px;
   color: var(--secondary-text-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 10px;
-}
 }
 /* секция чем мы занимаемся */
 .what-we-do {
@@ -197,21 +203,21 @@ ul {
   margin-bottom: 50px;
 }
 .images {
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;  
+  margin-left: -30px;
   margin-top: -30px;
 }
 .images,
 .team {
   display: flex;
 }
-.images li {
-  margin-left: 30px;  
+.images-item {
+  margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 90px) / 3)
+  flex-basis: calc((100% - 90px) / 3);
 }
-  /* секция наша команда */
+/* секция наша команда */
 .people {
   background-color: var(--secondary-backround-color);
 }
@@ -219,9 +225,9 @@ ul {
   padding-top: 30px;
 }
 .team {
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;  
+  margin-left: -30px;
   margin-top: -30px;
 }
 
@@ -236,16 +242,16 @@ ul {
   text-align: center;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-left: 30px;  
+  margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 120px) / 4)
+  flex-basis: calc((100% - 120px) / 4);
 }
 .name {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.17;
 }
-.member p {
+.profession {
   color: var(--secondary-text-color);
   margin-top: 10px;
 }
@@ -267,11 +273,11 @@ ul {
   display: inline-block;
   color: var(--footer-color);
 }
-.address p {
+.address-name {
   margin-bottom: 9px;
 }
 .tel {
-  margin-top:9px ;
+  margin-top: 9px;
 }
 /* Портфолио */
 /* оформление кнопок странице портфолио */
@@ -312,7 +318,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   /*justify-content: center;*/
-  margin-left: -30px;  
+  margin-left: -30px;
   margin-top: -30px;
 }
 .item-wrapper {
@@ -323,21 +329,19 @@ ul {
   padding: 20px 24px 20px 24px;
 }
 .item {
-  margin-left: 30px;  
+  margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 90px) / 3)
+  flex-basis: calc((100% - 90px) / 3);
 }
-.item img{
+.item-image {
   width: 370px;
   height: 294px;
-}
 }
 .item-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
-  
 }
 .item-description {
   color: var(--secondary-text-color);
