@@ -19,136 +19,164 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="navigation">
-        <a class="logo" href="./index.html"
-          ><span class="blue">Web</span>Studio</a
-        >
-        <ul class="site-nav">
-          <li><a href="./index.html">Студия</a></li>
-          <li><a class="current-page" href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="contacts">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-    </header>
-    <main>
-      <div class="filters">
-        <!--группа кнопок для фильтра портфолио -->
-        <ul class="button-group">
-          <li>
-            <button class="button" type="button">Все</button>
-          </li>
-          <li>
-            <button class="button" type="button">Веб-сайты</button>
-          </li>
-          <li>
-            <button class="button" type="button">Приложения</button>
-          </li>
-          <li>
-            <button class="button" type="button">Дизайн</button>
-          </li>
-          <li>
-            <button class="button" type="button">Маркетинг</button>
-          </li>
+      <div class="container menu">
+        <nav class="navigation">
+          <a class="logo" href="./index.html"
+            ><span class="blue">Web</span>Studio</a
+          >
+          <ul class="site-nav">
+            <li><a href="./index.html">Студия</a></li>
+            <li>
+              <a class="current-page" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </div>
-      <section class="project-list">
-        <ul class="project-items">
-          <li class="item">
-            <img
-              src="images/imgp1.jpg"
-              alt="открытое окно сайта в браузере на
+    </header>
+    <main>
+      <section class="filters section">
+        <div class="container">
+          <!--группа кнопок для фильтра портфолио -->
+          <ul class="button-group list">
+            <li>
+              <button class="button" type="button">Все</button>
+            </li>
+            <li>
+              <button class="button" type="button">Веб-сайты</button>
+            </li>
+            <li>
+              <button class="button" type="button">Приложения</button>
+            </li>
+            <li>
+              <button class="button" type="button">Дизайн</button>
+            </li>
+            <li>
+              <button class="button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <div class="project-list section container">
+          <ul class="project-items list">
+            <li class="item">
+              <img
+                src="images/imgp1.jpg"
+                alt="открытое окно сайта в браузере на
             экране ноутбука"
-              width="370"
-            />
-            <h3 class="item-title">Технокряк</h3>
-            <p class="item-description">Веб-сайт</p>
-          </li>
-          <li class="item">
-            <img
-              src="images/imgp2.jpg"
-              alt="два баскетболиста деруться за мяч"
-              width="370"
-            />
-            <h3 class="item-title">
-              Постер <span lang="en">New Orlean vs Golden Star</span>
-            </h3>
-            <p class="item-description">Дизайн</p>
-          </li>
-          <li class="item">
-            <img
-              src="images/imgp3.jpg"
-              alt="логотип рыбного ресторана"
-              width="370"
-            />
-            <h3 class="item-title">Ресторан <span lang="en">Seafood</span></h3>
-            <p class="item-description">Приложение</p>
-          </li>
-          <li class="item">
-            <img src="images/imgp4.jpg" alt="наушники" width="370" />
-            <h3 class="item-title">Проект <span lang="en">Prime</span></h3>
-            <p class="item-description">Маркетинг</p>
-          </li>
-          <li class="item">
-            <img
-              src="images/imgp5.jpg"
-              alt="большая белая коробка и маленькая розовая"
-              width="370"
-            />
-            <h3 class="item-title">Проект <span lang="en">Boxes</span></h3>
-            <p class="item-description">Приложение</p>
-          </li>
-          <li class="item">
-            <img
-              src="images/imgp6.jpg"
-              alt="открытое окно сайта в браузере на
+                width="370"
+              />
+              <div class="item-wrapper">
+                <h3 class="item-title">Технокряк</h3>
+                <p class="item-description">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="images/imgp2.jpg"
+                alt="два баскетболиста деруться за мяч"
+                width="370"
+              />
+              <div class="item-wrapper">
+                <h3 class="item-title">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h3>
+                <p class="item-description">Дизайн</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="images/imgp3.jpg"
+                alt="логотип рыбного ресторана"
+                width="370"
+              />
+              <div class="item-wrapper">
+                <h3 class="item-title">
+                  Ресторан <span lang="en">Seafood</span>
+                </h3>
+                <p class="item-description">Приложение</p>
+              </div>
+            </li>
+            <li class="item">
+              <img src="images/imgp4.jpg" alt="наушники" width="370" />
+              <div class="item-wrapper">
+                <h3 class="item-title">Проект <span lang="en">Prime</span></h3>
+                <p class="item-description">Маркетинг</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="images/imgp5.jpg"
+                alt="большая белая коробка и маленькая розовая"
+                width="370"
+              />
+              <div class="item-wrapper">
+                <h3 class="item-title">Проект <span lang="en">Boxes</span></h3>
+                <p class="item-description">Приложение</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="images/imgp6.jpg"
+                alt="открытое окно сайта в браузере на
             экране компьютера"
-              width="370"
-            />
-            <h3 class="item-title" lang="en">Inspiration has no borders</h3>
-            <p class="item-description">Веб-сайт</p>
-          </li>
-          <li class="item">
-            <img src="images/imgp7.jpg" alt="разворот издания" width="370" />
-            <h3 class="item-title">
-              Издание <span lang="en">Limited Edition</span>
-            </h3>
-            <p class="item-description">Дизайн</p>
-          </li>
-          <li class="item">
-            <img
-              src="images/imgp8.jpg"
-              alt="этикетка для проекта"
-              width="370"
-            />
-            <h3 class="item-title">Проект <span lang="en">LAB</span></h3>
-            <p class="item-description">Маркетинг</p>
-          </li>
-          <li class="item">
-            <img
-              src="images/imgp9.jpg"
-              alt="руки на клавиатуре ноутбука с открытым приложением для бизнесса"
-              width="370"
-            />
-            <h3 class="item-title" lang="en">Growing Business</h3>
-            <p class="item-description">Приложение</p>
-          </li>
-        </ul>
+                width="370"
+              />
+              <div class="item-wrapper">
+                <h3 class="item-title" lang="en">Inspiration has no borders</h3>
+                <p class="item-description">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="item">
+              <img src="images/imgp7.jpg" alt="разворот издания" width="370" />
+              <div class="item-wrapper">
+                <h3 class="item-title">
+                  Издание <span lang="en">Limited Edition</span>
+                </h3>
+                <p class="item-description">Дизайн</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="images/imgp8.jpg"
+                alt="этикетка для проекта"
+                width="370"
+              />
+              <div class="item-wrapper">
+                <h3 class="item-title">Проект <span lang="en">LAB</span></h3>
+                <p class="item-description">Маркетинг</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="images/imgp9.jpg"
+                alt="руки на клавиатуре ноутбука с открытым приложением для бизнесса"
+                width="370"
+              />
+              <div class="item-wrapper">
+                <h3 class="item-title" lang="en">Growing Business</h3>
+                <p class="item-description">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="logo" href="./index.html"
-        ><span class="blue">Web</span>Studio</a
-      >
-      <address class="address">
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <a class="contacts" href="mailto:info@example.com">info@example.com</a
-        ><br />
-        <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
-      </address>
+      <div class="container">
+        <a class="logo" href="./index.html"
+          ><span class="blue">Web</span>Studio</a
+        >
+        <address class="address">
+          <p>г. Киев, пр-т Леси Украинки, 26</p>
+          <a class="contacts" href="mailto:info@example.com">info@example.com</a
+          ><br />
+          <a class="contacts tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
